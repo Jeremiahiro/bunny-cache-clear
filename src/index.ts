@@ -12,7 +12,7 @@ BunnySDK.net.http.serve(async (request) => {
   const triggerId = searchParams.get('triggerId');
 
   if(!zone || !triggerId) {
-    return new Response(`Please provide valid zone and/or Trigger ID`, { status: 400 });
+    return new Response(`Please provide valid zone and/or Trigger ID`);
   }
 
   try {
