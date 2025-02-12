@@ -1,0 +1,40 @@
+{
+  "name": "bunny-cache-clear",
+  "version": "1.0.0",
+  "description": "Bunny Edge Cache Script",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run build && node dist/index.js",
+    "build": "ncc build src/index.ts -o dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeremiahiro/bunny-cache-clear.git"
+  },
+  "keywords": [
+    "bunny",
+    "cache",
+    "edge-script",
+    "github"
+  ],
+  "author": "Jeremiah Iro | Studio Rotate Dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeremiahiro/bunny-cache-clear/issues"
+  },
+  "homepage": "https://github.com/Jeremiahiro/bunny-cache-clear#readme",
+  "dependencies": {
+    "@bunny.net/edgescript-sdk": "^0.11.3",
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.13.1",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "@vercel/ncc": "^0.38.3",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0"
+  }
+}

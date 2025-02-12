@@ -34,5 +34,5 @@ jobs:
       - name: Publish the script to Bunny
         uses: "BunnyWay/actions/deploy-script@main"
         with:
-          script_id: 19716
+          script_id: ${{ secrets.BUNNY_SCRIPT_ID }}
           file: "npm install"
