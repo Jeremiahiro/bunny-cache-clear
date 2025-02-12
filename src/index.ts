@@ -20,7 +20,7 @@ BunnySDK.net.http.serve(async (request) => {
     const purgeUrl = `https://api.bunny.net/pullzone/${zone}/purgeCache`;
     const purgeResponse = await fetch(purgeUrl, {
       method: "POST",
-      headers: { "AccessKey": process.env.BUNNY_ACCESS_KEY as string },
+      headers: { "AccessKey": 'xxxx-xxxx-xxxx-xxxx-xxxx-xxxx-xxxx' },
     });
 
     // Prepare notification payload
