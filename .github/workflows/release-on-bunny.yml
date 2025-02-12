@@ -35,4 +35,5 @@ jobs:
         uses: "BunnyWay/actions/deploy-script@main"
         with:
           script_id: ${{ secrets.BUNNY_SCRIPT_ID }}
+          deploy_key: ${{ secrets.BUNNY_DEPLOY_KEY }}
           file: "dist/index.js"
