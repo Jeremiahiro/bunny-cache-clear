@@ -35,4 +35,4 @@ jobs:
         uses: "BunnyWay/actions/deploy-script@main"
         with:
           script_id: ${{ secrets.BUNNY_SCRIPT_ID }}
-          file: "npm install"
+          file: "dist/index.js"
